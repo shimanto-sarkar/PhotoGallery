@@ -23,10 +23,6 @@ body{
 /* =============== navbar start ======================= */
 .navbar{
     background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 60px;
-    z-index: 10000;
 }
 .navbar ul li {
     padding: 0 10px;
@@ -185,16 +181,27 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* =============== banner end ===================== */
+
+@media (max-width: 991px){
+    #banner .row{
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }
+    #banner .text{
+        margin-bottom: 50px;
+    }
+    #banner .text .signature{
+        margin-left: 10px;
+    }
+    .navbar ul{
+        width: 50%;
+        align-items: center;
+        background-color: #4c4c4c;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 20px;
+    }
+    
+}
+

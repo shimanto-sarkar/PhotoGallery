@@ -1,0 +1,200 @@
+/* =============== all links ================ */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* =============== all links ================ */
+
+*{
+    font-family: "Montserrat", serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+body{
+    background-color: #1c1d1f;
+}
+
+/* =============== navbar start ======================= */
+.navbar{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 60px;
+    z-index: 10000;
+}
+.navbar ul li {
+    padding: 0 10px;
+}
+.navbar ul li a{
+    color: white !important;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: .2s ease-in-out;
+}
+.navbar ul li a:hover{
+    color: #686868 !important;
+}
+
+.navbar .navbar_row{
+    padding: 0 30px;
+    width: 1770px !important;
+    height: 160px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+/* =============== navbar end ======================= */
+
+/* =============== banner start ===================== */
+
+#banner .img{
+    position: relative;
+}
+#banner .img_pad{
+    padding: 0 !important;
+}
+#banner .img{
+    /* width: 100%; */
+    height: 100vh;
+    background-image: url(/pages/about/images/about_banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#banner .img .overflow{
+    background-color: rgba(0,0,0,0.32);
+    position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#banner .text{
+    padding-top: 25%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+#banner h3{
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+#banner p{
+    font-size: 12px;
+    color: #787878 !important;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+#banner .signature{
+    margin-left: 197px;
+    margin-top: 50px;
+}
+#banner h2{
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+#banner .editing_one{
+    font-size: 10px;
+    font-weight: 700;
+    color: #4c4c4c;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 50px;
+}
+#banner .editing_one::after{
+    content: '';
+    width: 75%;
+    height: 1px;
+    background-color: #939393;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    animation: editing_one 1s linear;
+}
+@keyframes editing_one {
+    0%{
+        width: 0%;
+    }
+}
+
+#banner .editing_two{
+    font-size: 10px;
+    font-weight: 700;
+    color: #4c4c4c;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 50px;
+}
+#banner .editing_two::after{
+    content: '';
+    width: 68%;
+    height: 1px;
+    background-color: #939393;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    animation: editing_two 1s linear;
+}
+@keyframes editing_two {
+    0%{
+        width: 0%;
+    }
+}
+#banner .editing_three{
+    font-size: 10px;
+    font-weight: 700;
+    color: #4c4c4c;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+#banner .editing_three::after{
+    content: '';
+    width: 94%;
+    height: 1px;
+    background-color: #939393;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    animation: editing_three 1s linear;
+}
+@keyframes editing_three {
+    0%{
+        width: 0%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============== banner end ===================== */

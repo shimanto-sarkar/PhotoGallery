@@ -21,6 +21,10 @@ a{
 /* =============== navbar start ======================= */
 .navbar{
     background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 60px;
+    z-index: 10000;
 }
 .navbar ul li {
     padding: 0 10px;
@@ -35,12 +39,15 @@ a{
 .navbar ul li a:hover{
     color: #686868 !important;
 }
-.navbar-toggler{
-    color: white !important;
-    background-color: rgba(255, 255, 255, 0.32);
+
+.navbar .navbar_row{
+    padding: 0 30px;
+    width: 1770px !important;
+    height: 160px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
-
-
 /* =============== navbar end ======================= */
 
 

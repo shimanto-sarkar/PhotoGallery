@@ -16,7 +16,9 @@ a{
     text-decoration: none;
     display: inline-block;
 }
-
+body{
+    background-color: #1c1d1f;
+}
 
 /* =============== navbar start ======================= */
 .navbar{
@@ -36,15 +38,21 @@ a{
     color: #686868 !important;
 }
 
-
+.navbar .navbar_row{
+    padding: 0 30px;
+    width: 1770px !important;
+    height: 160px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
 /* =============== navbar end ======================= */
 
 /* ================ banner part ==================== */
 
 #banner{
     background-color: #1c1d1f;
-    width: 100%;
-    height: 100vh;
+    margin-bottom: 70px;
 }
 #banner h2{
     font-size: 13px;
@@ -69,21 +77,120 @@ a{
     position: absolute;
     bottom: 0px;
 }
+#banner .img{
+    width: 363px;
+    height: 363px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+#banner .img img{
+    width: 100%;
+}
+#banner .img .icon{
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% , -70%);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ;
+}
+#banner .img .icon .search_icon{
+    color: white;
+}
+#banner .img:hover .icon{
+     top: 50%;
+     visibility: visible;
+     opacity: 1;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#banner .row{
+    row-gap: 70px;
+}
 
 
 /* ================ banner part ==================== */
+
+/* ================ footer part ==================== */
+
+#footer{
+    background-color: rgba(0, 0, 0, 0.15);
+    padding-top: 60px;
+    padding-bottom: 60x;
+}
+#footer h5{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: poppins;
+    color: #787878;
+    margin-bottom: 20px;
+}
+#footer p{
+    font-size: 12px;    
+    font-weight: 400;
+    font-family: poppins;
+    color: #787878;
+}
+#footer ul{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    margin-right: 60px;
+}
+#footer ul li a{
+    font-size: 18px;
+    color: #606060;
+    transition: 0.15s ease-in-out;
+}
+#footer ul li a:hover{
+    transform: scale(1.2);
+}
+
+
+/* ================ footer part ==================== */
+
+#button {
+  display: inline-block;
+  background-color: #555;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}

@@ -89,6 +89,7 @@ body{
 }
 #banner .img img{
     width: 100%;
+    transition: .2s ease-in-out;
 }
 #banner .img .icon{
     width: 80px;
@@ -109,6 +110,9 @@ body{
 }
 #banner .img .icon .search_icon{
     color: white;
+}
+#banner .img:hover img{
+    filter: blur(2px);
 }
 #banner .img:hover .icon{
      top: 50%;

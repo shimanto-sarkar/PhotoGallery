@@ -89,7 +89,11 @@ body{
 }
 #banner .img img{
     width: 100%;
+<<<<<<< HEAD
     transition: .3s ease-in-out;
+=======
+    transition: .2s ease-in-out;
+>>>>>>> 4c468ecf1f0cf5e0fc8235ce47f9bf42d9ee6e9b
 }
 #banner .img .icon{
     width: 80px;
@@ -112,7 +116,11 @@ body{
     color: white;
 }
 #banner .img:hover img{
+<<<<<<< HEAD
     filter: blur(1.3px);
+=======
+    filter: blur(2px);
+>>>>>>> 4c468ecf1f0cf5e0fc8235ce47f9bf42d9ee6e9b
 }
 #banner .img:hover .icon{
      top: 50%;

@@ -83,7 +83,7 @@ body{
     padding-top: 19%;
     padding-left: 15%;
     padding-right: 15%;
-    padding-bottom: 10%;
+    /* padding-bottom: 10%; */
 }
 #banner h3{
     font-size: 11px;
@@ -108,7 +108,7 @@ body{
     font-weight: 700;
     color: white;
     letter-spacing: 2px;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 #banner .editing_one{
@@ -215,9 +215,12 @@ body{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        height: 700px;
     }
+ 
     p{
         color:gray !important;
+        
     }
     h4{
         color: deeppink !important;
